@@ -1,0 +1,10 @@
+input {
+  padding: .3rem;
+  border: none;
+  outline: none;
+  transition: .2s;
+  
+  &:focus {
+    background-color: rgb(110, 255, 43);
+  }
+}

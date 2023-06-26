@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react';
-import './App.css';
+import './App.scss';
 import { initializeApp } from "firebase/app";
 import { addDoc, collection, deleteDoc, doc, getDocs, getFirestore } from "firebase/firestore";
 import { Switch } from '@mui/material';
+import { Input } from './components/Input';
+import { UserCard } from './components/UserCard';
 
 const firebaseConfig = initializeApp({
   apiKey: "AIzaSyATonLgAvZ_XD46Z-sRUosxbBnMpJutuMI",
@@ -50,31 +52,13 @@ function App() {
   return (
     <div className="App">
       <div>
-        <input type="text" placeholder='Nome' value={name} onChange={(e) => setName(e.target.value)} />
-        <input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
+        <Input type="text" placeholder='Nome' value={name} onChange={(e) => setName(e.target.value)} />
+        <Input type="email" placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)} />
         <Switch value={register} onChange={(e) => setRegister(!register)} label="Cadastro" defaultChecked color="warning" />
       <button onClick={addUser}>Adicionar</button>
         <div>
             {users.map(user => (
-            <div key={user.id}> 
-              <b>
-                  {user.name}
-              </b>
-              <p>
-                  {user.email}
-              </p>
-                {
-                  user.register ? (
-                    <p>
-                      Aprovado
-                    </p>
-                  ) :
-                     <p>
-                     Negado
-                     </p>
-                }
-                <button onClick={() => deleteUser(user.id)}>Excluir</button>
-            </div>
+              <UserCard id={user.id} name={user.name} email={user.email} register={user.register} onClick={() => deleteUser(user.id)}  />
             ))}
         </div>
       </div>
