@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import { initializeApp } from "firebase/app";
-import { addDoc, collection, getDocs, getFirestore } from "firebase/firestore";
+import { addDoc, collection, deleteDoc, doc, getDocs, getFirestore } from "firebase/firestore";
 import { Switch } from '@mui/material';
 
 const firebaseConfig = initializeApp({
@@ -42,6 +42,11 @@ function App() {
     alert("Por favor, preenche todos os dados")
   }
 
+  async function deleteUser(id) {
+    const userDoc = doc(db, 'users', id)
+    await deleteDoc(userDoc);
+  }
+
   return (
     <div className="App">
       <div>
@@ -68,6 +73,7 @@ function App() {
                      Negado
                      </p>
                 }
+                <button onClick={() => deleteUser(user.id)}>Excluir</button>
             </div>
             ))}
         </div>
