@@ -6,7 +6,7 @@
   align-items: center;
   background-color: colors.$purple-500;
   box-shadow: 0 .01rem 1rem rgba(0, 0, 0, 0.616);
-  padding: .4rem .5rem;
+  padding: .2rem 1rem;
 
   b {
     color: white;
@@ -26,28 +26,40 @@
   .paths {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    border-top: 5px solid transparent;
+    gap: 1rem;
+
     .icon {
-      padding-top: .5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 5px;
+      
+      &.active {
+        border-bottom: 2px colors.$cyan-600 solid;
+      }
+
+      &:hover {
+        border-bottom: 2px colors.$cyan-500 solid;
+      }
 
       .icon-image {
-        width: 2rem;
-        height: 1.5rem;
-        padding: .3rem;
+
         color: white;
         border-radius: 100px;
         cursor: pointer;
         transition: .2s;
         
-      &:hover {
-        background-color: colors.$purple-700;
-      }
+      // &:hover {
+      //   background-color: colors.$purple-700;
+      // }
       
-      &:active {
-        background-color: colors.$purple-800;
-      }
-    }
+      // &:active {
+      //   background-color: colors.$purple-800;
+      // }
+     }
     }
   }
 }
+

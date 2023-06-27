@@ -10,16 +10,16 @@ export function Navbar() {
       </div>
       <div className="paths">
         <NavLink className="icon" to="/">
-         <House className="icon-image" size={32} />
+         <House className="icon-image" size={24} />
         </NavLink>
-        <NavLink className="icon">
-        <User className="icon-image" size={32} />
+        <NavLink className="icon"  to="/s">
+        <User className="icon-image" size={24} />
         </NavLink>
-        <NavLink className="icon">
-        <GearSix className="icon-image" size={32} />
+        <NavLink className="icon"  to="/d">
+        <GearSix className="icon-image" size={24} />
         </NavLink>
         <NavLink className="icon" to="/management">
-          <Wrench className="icon-image" size={32} />
+          <Wrench className="icon-image" size={24} />
         </NavLink>
       </div>  
     </div>
