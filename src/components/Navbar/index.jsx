@@ -6,7 +6,7 @@ export function Navbar() {
   return (
     <div className="navbar-container">
       <div>
-        <b>Royamme</b>
+        <b>Royaume</b>
       </div>
       <div className="paths">
         <NavLink className="icon" to="/">
