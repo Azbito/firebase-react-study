@@ -1,15 +1,15 @@
 import './style.scss'
 import Waves from '../../assets/images/wave.svg'
-export function Home() {
 
+export function Home() {
   return (
     <div className="home-container">
       <div className="welcome-container">
         <img className="waves" src={Waves} alt="" />
         <div className="welcome-content">
-        <b>Welcome!</b>
+        <b>Bem-vindo!</b>
         <p>
-          You are on as <strong>Manager role</strong>
+          Você está como cargo de <strong>gerente</strong>
         </p>
         </div>
       </div>
