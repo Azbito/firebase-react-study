@@ -1,0 +1,34 @@
+.management-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  button {
+    background-color: rgb(100, 238, 36);
+    border: none;
+    outline: none;
+    padding: .45rem .4rem;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(79, 202, 22);
+    }
+
+    &:active {
+      background-color: rgb(115, 224, 64);
+    }
+  }
+
+  .users-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+}
+}

@@ -1,0 +1,53 @@
+@use '../../colors.scss';
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: colors.$purple-500;
+  box-shadow: 0 .01rem 1rem rgba(0, 0, 0, 0.616);
+  padding: .4rem .5rem;
+
+  b {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover {
+      color: rgb(216, 216, 216)
+    }
+
+    &:active {
+      color: rgb(180, 180, 180)
+    }
+  }
+
+  .paths {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .icon {
+      padding-top: .5rem;
+
+      .icon-image {
+        width: 2rem;
+        height: 1.5rem;
+        padding: .3rem;
+        color: white;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: .2s;
+        
+      &:hover {
+        background-color: colors.$purple-700;
+      }
+      
+      &:active {
+        background-color: colors.$purple-800;
+      }
+    }
+    }
+  }
+}

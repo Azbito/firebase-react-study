@@ -3,8 +3,18 @@ input {
   border: none;
   outline: none;
   transition: .2s;
-  
+  border-radius: 10px;
+  background-color: white;
+
   &:focus {
-    background-color: rgb(110, 255, 43);
+    background-color: rgb(241, 160, 7);
+  }
+
+  &:valid:not(:placeholder-shown) {
+    background-color: rgb(36, 243, 36)
+  }
+
+  &:invalid {
+    background-color: red;
   }
 }

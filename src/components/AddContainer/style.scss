@@ -1,0 +1,50 @@
+@use '../../colors.scss';
+
+.add-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  border-radius: .5rem;
+  margin: 2rem 0;
+
+  background-color: colors.$purple-600;
+
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.274);
+
+  b {
+    color: white;
+    margin-bottom: -1rem
+  }
+
+  .approved {
+    background-color: rgb(17, 235, 17);
+    padding: .3rem;
+    border-radius: .5rem;
+    color: white;
+    font-style: bold;
+    animation: FadingIn .5s forwards
+  }
+
+  p1 {
+    background-color: rgb(243, 36, 36);
+    padding: .3rem;
+    border-radius: .5rem;
+    color: white;
+    font-style: bold;
+    animation: FadingIn .5s forwards
+  }
+}
+
+@keyframes FadingIn {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem)
+  }
+
+  100% {
+    opacity: 1
+  }
+}

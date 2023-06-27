@@ -1,0 +1,214 @@
+@use '../../colors.scss';
+
+.waves-container {
+  display: flex;
+  position: relative;
+
+  .wave-1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 7rem;
+    top: 7rem;
+
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+  
+  .wave-2 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 18rem;
+    top: 8rem;
+
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+  
+  .wave-3 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 24rem;
+    top: 3rem;
+    
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+  
+  .wave-4 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: -.4rem;
+
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+
+  .wave-5 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 29rem;
+    top: -1rem;
+
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+
+  .wave-6 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 35rem;
+    top: 4rem;
+
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+
+  .wave-7 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 40rem;
+    top: 10rem;
+
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+
+  .wave-8 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 54rem;
+    top: 8rem;
+
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+
+  .wave-9 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 56rem;
+    top: 10rem;
+
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+  
+  .wave-10 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 62rem;
+    top: 6rem;
+
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+
+  .wave-11 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 68rem;
+    top: 10rem;
+
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+
+  .wave-12 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 68rem;
+    top: 4rem;
+
+    &::after {
+      content: '';
+      width: 15rem;
+      height: 15rem;
+      border-radius: 999px;
+      background-color: colors.$cyan-600;
+    }
+  }
+
+  .wave-white-1 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 14.5rem;
+    top: 0rem;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      width: 12rem;
+      height: 12rem;
+      border-radius: 999px;
+      background-color: whitesmoke;
+    }
+  }
+}
